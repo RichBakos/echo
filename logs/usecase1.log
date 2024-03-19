@@ -1,0 +1,2120 @@
+2016-07-06 09:45:02.507296 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4720</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018611</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was created.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        New Account:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Attributes:
+           SAM Account Name:	steven.jacobs
+           Display Name:       Steven Jacobs
+           User Principal Name:	steven.jacobs@SANDBOX.com
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	<never>
+           Account Expires:		<never>
+           Primary Group ID:	513
+           Allowed To Delegate To:	-
+           Old UAC Value:		0x0
+           New UAC Value:		0x15
+           User Account Control:
+               Account Disabled
+               'Password Not Required' - Enabled
+               'Normal Account' - Enabled
+           User Parameters:	-
+           SID History:		-
+           Logon Hours:		<value not set>
+
+        Additional Information:
+           Privileges		-</EventData></Event>
+2016-07-06 09:45:10.514203 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4722</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018621</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1692'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was enabled.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:		SANDBOX</EventData></Event>
+2016-07-06 09:45:18.533793 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4738</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018616</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was changed.
+        Subject:
+           Security ID:		NT AUTHORITY\ANONYMOUS LOGON
+           Account Name:       ANONYMOUS LOGON
+           Account Domain:     NT AUTHORITY
+           Logon ID:           0x3e6
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Changed Attributes
+           SAM Account Name:	-
+           Display Name:		-
+           User Principal Name:	-
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	2/20/2015 8:42:11 AM
+           Account Expires:		-
+           Primary Group ID:	-
+           AllowedToDelegateTo:	-
+           Old UAC Value:		-
+           New UAC Value:		-
+           User Account Control:	-
+           User Parameters:	-
+            SID History:		-
+           Logon Hours:		-
+        Additional Information
+           Privileges:		-</EventData></Event>
+2016-07-06 09:45:23.556700 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4624</EventID><Version>0</Version><Level>Information</Level><Task>Logon</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10218036</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2900'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was successfully logged on.
+        Subject:
+           Security ID: NULL SID
+           Account Name:		-
+           Account Domain:		-
+           Logon ID:		0x0
+
+        Logon Type:			3
+
+        New Logon:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name: steven.jacobs
+           Account Domain: SANDBOX
+           Logon ID:		0x582eb157
+           Logon GUID:		{a840c337-fb6a-8e32-7126-6c7e5951b8ed}
+
+        Process Information
+           Process ID:		0x0
+           Process Name:		-
+
+        Network Information
+           Workstation Name:
+           Source Network Address:	-
+           Source Port:		-
+
+        Detailed Authentication Information:
+           Logon Process: Kerberos
+           Authentication Package: Kerberos
+           Transited Services:	-
+           Package Name (NTLM only):	-
+           Key Length:		0
+
+        This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+        The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+        The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+        The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+        The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+        The authentication information fields provide detailed information about this specific logon request.
+           - Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+           - Transited services indicate which intermediate services have participated in this logon request.
+           - Package name indicates which sub-protocol was used among the NTLM protocols.
+           - Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</EventData></Event>
+2016-07-06 09:45:30.564840 REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-WW-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-NA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-EMEA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-APAC-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-ENT-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-SME-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+2016-07-06 09:45:37.583920 NETWORK MONITOR EVENT 10.1.3.82 <LOC0:INFO> Mar  5 13:04:54 US-FINSVR001 EVID:0042 US-FINSVR001 accessed url: http://www.dropbox.com at 108.160.166.62
+2016-07-06 09:45:42.592596 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4634</EventID><Version>0</Version><Level>Information</Level><Task>Logoff</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>33176</EventRecordID><Correlation/><Execution ProcessID='528' ThreadID='932'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was logged off.Subject:   Security ID:		SANDBOX\steven.jacobs   Account Name:       steven.jacobs   Account Domain:     SANDBOX   Logon ID:           0x1961D898Logon Type:			10This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</EventData></Event>
+2016-07-07 13:43:28.393978 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4720</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018611</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was created.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        New Account:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Attributes:
+           SAM Account Name:	steven.jacobs
+           Display Name:       Steven Jacobs
+           User Principal Name:	steven.jacobs@SANDBOX.com
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	<never>
+           Account Expires:		<never>
+           Primary Group ID:	513
+           Allowed To Delegate To:	-
+           Old UAC Value:		0x0
+           New UAC Value:		0x15
+           User Account Control:
+               Account Disabled
+               'Password Not Required' - Enabled
+               'Normal Account' - Enabled
+           User Parameters:	-
+           SID History:		-
+           Logon Hours:		<value not set>
+
+        Additional Information:
+           Privileges		-</EventData></Event>
+2016-07-07 13:43:36.448812 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4722</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018621</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1692'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was enabled.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:		SANDBOX</EventData></Event>
+2016-07-07 13:43:43.467948 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4738</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018616</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was changed.
+        Subject:
+           Security ID:		NT AUTHORITY\ANONYMOUS LOGON
+           Account Name:       ANONYMOUS LOGON
+           Account Domain:     NT AUTHORITY
+           Logon ID:           0x3e6
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Changed Attributes
+           SAM Account Name:	-
+           Display Name:		-
+           User Principal Name:	-
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	2/20/2015 8:42:11 AM
+           Account Expires:		-
+           Primary Group ID:	-
+           AllowedToDelegateTo:	-
+           Old UAC Value:		-
+           New UAC Value:		-
+           User Account Control:	-
+           User Parameters:	-
+            SID History:		-
+           Logon Hours:		-
+        Additional Information
+           Privileges:		-</EventData></Event>
+2016-07-07 13:43:52.486487 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4624</EventID><Version>0</Version><Level>Information</Level><Task>Logon</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10218036</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2900'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was successfully logged on.
+        Subject:
+           Security ID: NULL SID
+           Account Name:		-
+           Account Domain:		-
+           Logon ID:		0x0
+
+        Logon Type:			3
+
+        New Logon:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name: steven.jacobs
+           Account Domain: SANDBOX
+           Logon ID:		0x582eb157
+           Logon GUID:		{a840c337-fb6a-8e32-7126-6c7e5951b8ed}
+
+        Process Information
+           Process ID:		0x0
+           Process Name:		-
+
+        Network Information
+           Workstation Name:
+           Source Network Address:	-
+           Source Port:		-
+
+        Detailed Authentication Information:
+           Logon Process: Kerberos
+           Authentication Package: Kerberos
+           Transited Services:	-
+           Package Name (NTLM only):	-
+           Key Length:		0
+
+        This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+        The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+        The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+        The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+        The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+        The authentication information fields provide detailed information about this specific logon request.
+           - Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+           - Transited services indicate which intermediate services have participated in this logon request.
+           - Package name indicates which sub-protocol was used among the NTLM protocols.
+           - Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</EventData></Event>
+2016-07-07 13:43:59.507801 REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-WW-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-NA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-EMEA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-APAC-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-ENT-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-SME-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+2016-07-07 13:44:06.531343 NETWORK MONITOR EVENT 10.1.3.82 <LOC0:INFO> Mar  5 13:04:54 US-FINSVR001 EVID:0042 US-FINSVR001 accessed url: http://www.dropbox.com at 108.160.166.62
+2016-07-07 13:44:11.539510 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4634</EventID><Version>0</Version><Level>Information</Level><Task>Logoff</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>33176</EventRecordID><Correlation/><Execution ProcessID='528' ThreadID='932'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was logged off.Subject:   Security ID:		SANDBOX\steven.jacobs   Account Name:       steven.jacobs   Account Domain:     SANDBOX   Logon ID:           0x1961D898Logon Type:			10This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</EventData></Event>
+2016-07-07 13:44:18.561798 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4726</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10295733</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2328'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was deleted.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:           0x909f8207
+
+        Target Account
+           Security ID:        S -1 - 5 - 21 - 3198741196 - 3878509842 - 143179808 - 1120
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Additional Information
+           Privileges      -</EventData></Event>
+2016-09-30 20:30:55.792454 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4720</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018611</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was created.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        New Account:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Attributes:
+           SAM Account Name:	steven.jacobs
+           Display Name:       Steven Jacobs
+           User Principal Name:	steven.jacobs@SANDBOX.com
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	<never>
+           Account Expires:		<never>
+           Primary Group ID:	513
+           Allowed To Delegate To:	-
+           Old UAC Value:		0x0
+           New UAC Value:		0x15
+           User Account Control:
+               Account Disabled
+               'Password Not Required' - Enabled
+               'Normal Account' - Enabled
+           User Parameters:	-
+           SID History:		-
+           Logon Hours:		<value not set>
+
+        Additional Information:
+           Privileges		-</EventData></Event>
+2016-09-30 20:31:00.805289 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4722</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018621</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1692'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was enabled.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:		SANDBOX</EventData></Event>
+2016-09-30 20:31:10.812301 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4738</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018616</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was changed.
+        Subject:
+           Security ID:		NT AUTHORITY\ANONYMOUS LOGON
+           Account Name:       ANONYMOUS LOGON
+           Account Domain:     NT AUTHORITY
+           Logon ID:           0x3e6
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Changed Attributes
+           SAM Account Name:	-
+           Display Name:		-
+           User Principal Name:	-
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	2/20/2015 8:42:11 AM
+           Account Expires:		-
+           Primary Group ID:	-
+           AllowedToDelegateTo:	-
+           Old UAC Value:		-
+           New UAC Value:		-
+           User Account Control:	-
+           User Parameters:	-
+            SID History:		-
+           Logon Hours:		-
+        Additional Information
+           Privileges:		-</EventData></Event>
+2016-09-30 20:31:15.819485 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4624</EventID><Version>0</Version><Level>Information</Level><Task>Logon</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10218036</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2900'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was successfully logged on.
+        Subject:
+           Security ID: NULL SID
+           Account Name:		-
+           Account Domain:		-
+           Logon ID:		0x0
+
+        Logon Type:			3
+
+        New Logon:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name: steven.jacobs
+           Account Domain: SANDBOX
+           Logon ID:		0x582eb157
+           Logon GUID:		{a840c337-fb6a-8e32-7126-6c7e5951b8ed}
+
+        Process Information
+           Process ID:		0x0
+           Process Name:		-
+
+        Network Information
+           Workstation Name:
+           Source Network Address:	-
+           Source Port:		-
+
+        Detailed Authentication Information:
+           Logon Process: Kerberos
+           Authentication Package: Kerberos
+           Transited Services:	-
+           Package Name (NTLM only):	-
+           Key Length:		0
+
+        This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+        The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+        The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+        The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+        The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+        The authentication information fields provide detailed information about this specific logon request.
+           - Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+           - Transited services indicate which intermediate services have participated in this logon request.
+           - Package name indicates which sub-protocol was used among the NTLM protocols.
+           - Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</EventData></Event>
+2016-09-30 20:31:21.827061 REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-WW-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-NA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-EMEA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-APAC-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-ENT-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-SME-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+2016-09-30 20:31:29.835329 NETWORK MONITOR EVENT 10.1.3.82 <LOC0:INFO> Mar  5 13:04:54 US-FINSVR001 EVID:0042 US-FINSVR001 accessed url: http://www.dropbox.com at 108.160.166.62
+2016-09-30 20:31:34.843617 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4634</EventID><Version>0</Version><Level>Information</Level><Task>Logoff</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>33176</EventRecordID><Correlation/><Execution ProcessID='528' ThreadID='932'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was logged off.Subject:   Security ID:		SANDBOX\steven.jacobs   Account Name:       steven.jacobs   Account Domain:     SANDBOX   Logon ID:           0x1961D898Logon Type:			10This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</EventData></Event>
+2016-09-30 20:31:44.851168 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4726</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10295733</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2328'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was deleted.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:           0x909f8207
+
+        Target Account
+           Security ID:        S -1 - 5 - 21 - 3198741196 - 3878509842 - 143179808 - 1120
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Additional Information
+           Privileges      -</EventData></Event>
+2016-09-30 22:46:59.063532 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4720</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018611</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was created.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        New Account:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Attributes:
+           SAM Account Name:	steven.jacobs
+           Display Name:       Steven Jacobs
+           User Principal Name:	steven.jacobs@SANDBOX.com
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	<never>
+           Account Expires:		<never>
+           Primary Group ID:	513
+           Allowed To Delegate To:	-
+           Old UAC Value:		0x0
+           New UAC Value:		0x15
+           User Account Control:
+               Account Disabled
+               'Password Not Required' - Enabled
+               'Normal Account' - Enabled
+           User Parameters:	-
+           SID History:		-
+           Logon Hours:		<value not set>
+
+        Additional Information:
+           Privileges		-</EventData></Event>
+2016-09-30 22:47:07.079116 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4722</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018621</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1692'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was enabled.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:		SANDBOX</EventData></Event>
+2016-09-30 22:47:15.096715 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4738</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018616</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was changed.
+        Subject:
+           Security ID:		NT AUTHORITY\ANONYMOUS LOGON
+           Account Name:       ANONYMOUS LOGON
+           Account Domain:     NT AUTHORITY
+           Logon ID:           0x3e6
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Changed Attributes
+           SAM Account Name:	-
+           Display Name:		-
+           User Principal Name:	-
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	2/20/2015 8:42:11 AM
+           Account Expires:		-
+           Primary Group ID:	-
+           AllowedToDelegateTo:	-
+           Old UAC Value:		-
+           New UAC Value:		-
+           User Account Control:	-
+           User Parameters:	-
+            SID History:		-
+           Logon Hours:		-
+        Additional Information
+           Privileges:		-</EventData></Event>
+2016-09-30 22:47:21.105055 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4624</EventID><Version>0</Version><Level>Information</Level><Task>Logon</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10218036</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2900'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was successfully logged on.
+        Subject:
+           Security ID: NULL SID
+           Account Name:		-
+           Account Domain:		-
+           Logon ID:		0x0
+
+        Logon Type:			3
+
+        New Logon:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name: steven.jacobs
+           Account Domain: SANDBOX
+           Logon ID:		0x582eb157
+           Logon GUID:		{a840c337-fb6a-8e32-7126-6c7e5951b8ed}
+
+        Process Information
+           Process ID:		0x0
+           Process Name:		-
+
+        Network Information
+           Workstation Name:
+           Source Network Address:	-
+           Source Port:		-
+
+        Detailed Authentication Information:
+           Logon Process: Kerberos
+           Authentication Package: Kerberos
+           Transited Services:	-
+           Package Name (NTLM only):	-
+           Key Length:		0
+
+        This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+        The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+        The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+        The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+        The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+        The authentication information fields provide detailed information about this specific logon request.
+           - Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+           - Transited services indicate which intermediate services have participated in this logon request.
+           - Package name indicates which sub-protocol was used among the NTLM protocols.
+           - Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</EventData></Event>
+2016-09-30 22:47:27.113965 REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-WW-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-NA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-EMEA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-APAC-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-ENT-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-SME-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+2016-09-30 22:47:33.124111 NETWORK MONITOR EVENT 10.1.3.82 <LOC0:INFO> Mar  5 13:04:54 US-FINSVR001 EVID:0042 US-FINSVR001 accessed url: http://www.dropbox.com at 108.160.166.62
+2016-09-30 22:47:43.133868 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4634</EventID><Version>0</Version><Level>Information</Level><Task>Logoff</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>33176</EventRecordID><Correlation/><Execution ProcessID='528' ThreadID='932'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was logged off.Subject:   Security ID:		SANDBOX\steven.jacobs   Account Name:       steven.jacobs   Account Domain:     SANDBOX   Logon ID:           0x1961D898Logon Type:			10This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</EventData></Event>
+2016-09-30 22:47:51.145514 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4726</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10295733</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2328'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was deleted.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:           0x909f8207
+
+        Target Account
+           Security ID:        S -1 - 5 - 21 - 3198741196 - 3878509842 - 143179808 - 1120
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Additional Information
+           Privileges      -</EventData></Event>
+2016-09-30 23:47:35.191450 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4720</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018611</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was created.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        New Account:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Attributes:
+           SAM Account Name:	steven.jacobs
+           Display Name:       Steven Jacobs
+           User Principal Name:	steven.jacobs@SANDBOX.com
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	<never>
+           Account Expires:		<never>
+           Primary Group ID:	513
+           Allowed To Delegate To:	-
+           Old UAC Value:		0x0
+           New UAC Value:		0x15
+           User Account Control:
+               Account Disabled
+               'Password Not Required' - Enabled
+               'Normal Account' - Enabled
+           User Parameters:	-
+           SID History:		-
+           Logon Hours:		<value not set>
+
+        Additional Information:
+           Privileges		-</EventData></Event>
+2016-09-30 23:47:40.200584 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4722</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018621</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1692'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was enabled.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:		SANDBOX</EventData></Event>
+2016-09-30 23:47:46.209477 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4738</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018616</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was changed.
+        Subject:
+           Security ID:		NT AUTHORITY\ANONYMOUS LOGON
+           Account Name:       ANONYMOUS LOGON
+           Account Domain:     NT AUTHORITY
+           Logon ID:           0x3e6
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Changed Attributes
+           SAM Account Name:	-
+           Display Name:		-
+           User Principal Name:	-
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	2/20/2015 8:42:11 AM
+           Account Expires:		-
+           Primary Group ID:	-
+           AllowedToDelegateTo:	-
+           Old UAC Value:		-
+           New UAC Value:		-
+           User Account Control:	-
+           User Parameters:	-
+            SID History:		-
+           Logon Hours:		-
+        Additional Information
+           Privileges:		-</EventData></Event>
+2016-09-30 23:47:55.219792 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4624</EventID><Version>0</Version><Level>Information</Level><Task>Logon</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10218036</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2900'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was successfully logged on.
+        Subject:
+           Security ID: NULL SID
+           Account Name:		-
+           Account Domain:		-
+           Logon ID:		0x0
+
+        Logon Type:			3
+
+        New Logon:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name: steven.jacobs
+           Account Domain: SANDBOX
+           Logon ID:		0x582eb157
+           Logon GUID:		{a840c337-fb6a-8e32-7126-6c7e5951b8ed}
+
+        Process Information
+           Process ID:		0x0
+           Process Name:		-
+
+        Network Information
+           Workstation Name:
+           Source Network Address:	-
+           Source Port:		-
+
+        Detailed Authentication Information:
+           Logon Process: Kerberos
+           Authentication Package: Kerberos
+           Transited Services:	-
+           Package Name (NTLM only):	-
+           Key Length:		0
+
+        This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+        The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+        The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+        The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+        The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+        The authentication information fields provide detailed information about this specific logon request.
+           - Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+           - Transited services indicate which intermediate services have participated in this logon request.
+           - Package name indicates which sub-protocol was used among the NTLM protocols.
+           - Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</EventData></Event>
+2016-09-30 23:48:05.229717 REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-WW-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-NA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-EMEA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-APAC-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-ENT-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-SME-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+2016-09-30 23:48:12.240707 NETWORK MONITOR EVENT 10.1.3.82 <LOC0:INFO> Mar  5 13:04:54 US-FINSVR001 EVID:0042 US-FINSVR001 accessed url: http://www.dropbox.com at 108.160.166.62
+2016-09-30 23:48:17.251687 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4634</EventID><Version>0</Version><Level>Information</Level><Task>Logoff</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>33176</EventRecordID><Correlation/><Execution ProcessID='528' ThreadID='932'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was logged off.Subject:   Security ID:		SANDBOX\steven.jacobs   Account Name:       steven.jacobs   Account Domain:     SANDBOX   Logon ID:           0x1961D898Logon Type:			10This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</EventData></Event>
+2016-09-30 23:48:22.263113 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4726</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10295733</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2328'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was deleted.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:           0x909f8207
+
+        Target Account
+           Security ID:        S -1 - 5 - 21 - 3198741196 - 3878509842 - 143179808 - 1120
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Additional Information
+           Privileges      -</EventData></Event>
+2016-12-20 17:21:02.198196 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4720</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018611</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was created.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        New Account:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Attributes:
+           SAM Account Name:	steven.jacobs
+           Display Name:       Steven Jacobs
+           User Principal Name:	steven.jacobs@SANDBOX.com
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	<never>
+           Account Expires:		<never>
+           Primary Group ID:	513
+           Allowed To Delegate To:	-
+           Old UAC Value:		0x0
+           New UAC Value:		0x15
+           User Account Control:
+               Account Disabled
+               'Password Not Required' - Enabled
+               'Normal Account' - Enabled
+           User Parameters:	-
+           SID History:		-
+           Logon Hours:		<value not set>
+
+        Additional Information:
+           Privileges		-</EventData></Event>
+2016-12-20 17:21:11.222687 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4722</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018621</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1692'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was enabled.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:		SANDBOX</EventData></Event>
+2016-12-20 17:21:18.239761 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4738</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018616</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was changed.
+        Subject:
+           Security ID:		NT AUTHORITY\ANONYMOUS LOGON
+           Account Name:       ANONYMOUS LOGON
+           Account Domain:     NT AUTHORITY
+           Logon ID:           0x3e6
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Changed Attributes
+           SAM Account Name:	-
+           Display Name:		-
+           User Principal Name:	-
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	2/20/2015 8:42:11 AM
+           Account Expires:		-
+           Primary Group ID:	-
+           AllowedToDelegateTo:	-
+           Old UAC Value:		-
+           New UAC Value:		-
+           User Account Control:	-
+           User Parameters:	-
+            SID History:		-
+           Logon Hours:		-
+        Additional Information
+           Privileges:		-</EventData></Event>
+2016-12-20 17:21:27.262794 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4624</EventID><Version>0</Version><Level>Information</Level><Task>Logon</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10218036</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2900'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was successfully logged on.
+        Subject:
+           Security ID: NULL SID
+           Account Name:		-
+           Account Domain:		-
+           Logon ID:		0x0
+
+        Logon Type:			3
+
+        New Logon:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name: steven.jacobs
+           Account Domain: SANDBOX
+           Logon ID:		0x582eb157
+           Logon GUID:		{a840c337-fb6a-8e32-7126-6c7e5951b8ed}
+
+        Process Information
+           Process ID:		0x0
+           Process Name:		-
+
+        Network Information
+           Workstation Name:
+           Source Network Address:	-
+           Source Port:		-
+
+        Detailed Authentication Information:
+           Logon Process: Kerberos
+           Authentication Package: Kerberos
+           Transited Services:	-
+           Package Name (NTLM only):	-
+           Key Length:		0
+
+        This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+        The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+        The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+        The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+        The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+        The authentication information fields provide detailed information about this specific logon request.
+           - Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+           - Transited services indicate which intermediate services have participated in this logon request.
+           - Package name indicates which sub-protocol was used among the NTLM protocols.
+           - Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</EventData></Event>
+2016-12-20 17:21:34.275022 REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-WW-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-NA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-EMEA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-APAC-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-ENT-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-SME-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+2016-12-20 17:21:40.294724 NETWORK MONITOR EVENT 10.1.3.82 <LOC0:INFO> Mar  5 13:04:54 US-FINSVR001 EVID:0042 US-FINSVR001 accessed url: http://www.dropbox.com at 108.160.166.62
+2016-12-20 17:21:45.310048 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4634</EventID><Version>0</Version><Level>Information</Level><Task>Logoff</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>33176</EventRecordID><Correlation/><Execution ProcessID='528' ThreadID='932'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was logged off.Subject:   Security ID:		SANDBOX\steven.jacobs   Account Name:       steven.jacobs   Account Domain:     SANDBOX   Logon ID:           0x1961D898Logon Type:			10This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</EventData></Event>
+2016-12-20 17:21:50.341098 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4726</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10295733</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2328'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was deleted.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:           0x909f8207
+
+        Target Account
+           Security ID:        S -1 - 5 - 21 - 3198741196 - 3878509842 - 143179808 - 1120
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Additional Information
+           Privileges      -</EventData></Event>
+2016-12-20 17:22:57.278844 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4720</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018611</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was created.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        New Account:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Attributes:
+           SAM Account Name:	steven.jacobs
+           Display Name:       Steven Jacobs
+           User Principal Name:	steven.jacobs@SANDBOX.com
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	<never>
+           Account Expires:		<never>
+           Primary Group ID:	513
+           Allowed To Delegate To:	-
+           Old UAC Value:		0x0
+           New UAC Value:		0x15
+           User Account Control:
+               Account Disabled
+               'Password Not Required' - Enabled
+               'Normal Account' - Enabled
+           User Parameters:	-
+           SID History:		-
+           Logon Hours:		<value not set>
+
+        Additional Information:
+           Privileges		-</EventData></Event>
+2016-12-20 17:23:04.306962 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4722</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018621</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1692'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was enabled.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:		SANDBOX</EventData></Event>
+2016-12-20 17:23:13.322973 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4738</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018616</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was changed.
+        Subject:
+           Security ID:		NT AUTHORITY\ANONYMOUS LOGON
+           Account Name:       ANONYMOUS LOGON
+           Account Domain:     NT AUTHORITY
+           Logon ID:           0x3e6
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Changed Attributes
+           SAM Account Name:	-
+           Display Name:		-
+           User Principal Name:	-
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	2/20/2015 8:42:11 AM
+           Account Expires:		-
+           Primary Group ID:	-
+           AllowedToDelegateTo:	-
+           Old UAC Value:		-
+           New UAC Value:		-
+           User Account Control:	-
+           User Parameters:	-
+            SID History:		-
+           Logon Hours:		-
+        Additional Information
+           Privileges:		-</EventData></Event>
+2016-12-20 17:23:22.352433 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4624</EventID><Version>0</Version><Level>Information</Level><Task>Logon</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10218036</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2900'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was successfully logged on.
+        Subject:
+           Security ID: NULL SID
+           Account Name:		-
+           Account Domain:		-
+           Logon ID:		0x0
+
+        Logon Type:			3
+
+        New Logon:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name: steven.jacobs
+           Account Domain: SANDBOX
+           Logon ID:		0x582eb157
+           Logon GUID:		{a840c337-fb6a-8e32-7126-6c7e5951b8ed}
+
+        Process Information
+           Process ID:		0x0
+           Process Name:		-
+
+        Network Information
+           Workstation Name:
+           Source Network Address:	-
+           Source Port:		-
+
+        Detailed Authentication Information:
+           Logon Process: Kerberos
+           Authentication Package: Kerberos
+           Transited Services:	-
+           Package Name (NTLM only):	-
+           Key Length:		0
+
+        This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+        The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+        The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+        The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+        The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+        The authentication information fields provide detailed information about this specific logon request.
+           - Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+           - Transited services indicate which intermediate services have participated in this logon request.
+           - Package name indicates which sub-protocol was used among the NTLM protocols.
+           - Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</EventData></Event>
+2016-12-20 17:23:30.367774 REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-WW-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-NA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-EMEA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-APAC-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-ENT-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-SME-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+2016-12-20 17:23:37.385135 NETWORK MONITOR EVENT 10.1.3.82 <LOC0:INFO> Mar  5 13:04:54 US-FINSVR001 EVID:0042 US-FINSVR001 accessed url: http://www.dropbox.com at 108.160.166.62
+2016-12-20 17:23:46.400722 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4634</EventID><Version>0</Version><Level>Information</Level><Task>Logoff</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>33176</EventRecordID><Correlation/><Execution ProcessID='528' ThreadID='932'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was logged off.Subject:   Security ID:		SANDBOX\steven.jacobs   Account Name:       steven.jacobs   Account Domain:     SANDBOX   Logon ID:           0x1961D898Logon Type:			10This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</EventData></Event>
+2016-12-20 17:23:55.428853 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4726</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10295733</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2328'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was deleted.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:           0x909f8207
+
+        Target Account
+           Security ID:        S -1 - 5 - 21 - 3198741196 - 3878509842 - 143179808 - 1120
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Additional Information
+           Privileges      -</EventData></Event>
+2016-12-20 17:24:03.296206 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4720</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018611</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was created.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        New Account:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Attributes:
+           SAM Account Name:	steven.jacobs
+           Display Name:       Steven Jacobs
+           User Principal Name:	steven.jacobs@SANDBOX.com
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	<never>
+           Account Expires:		<never>
+           Primary Group ID:	513
+           Allowed To Delegate To:	-
+           Old UAC Value:		0x0
+           New UAC Value:		0x15
+           User Account Control:
+               Account Disabled
+               'Password Not Required' - Enabled
+               'Normal Account' - Enabled
+           User Parameters:	-
+           SID History:		-
+           Logon Hours:		<value not set>
+
+        Additional Information:
+           Privileges		-</EventData></Event>
+2016-12-20 17:24:11.315980 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4722</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018621</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1692'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was enabled.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:		SANDBOX</EventData></Event>
+2016-12-20 17:24:19.337115 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4738</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018616</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was changed.
+        Subject:
+           Security ID:		NT AUTHORITY\ANONYMOUS LOGON
+           Account Name:       ANONYMOUS LOGON
+           Account Domain:     NT AUTHORITY
+           Logon ID:           0x3e6
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Changed Attributes
+           SAM Account Name:	-
+           Display Name:		-
+           User Principal Name:	-
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	2/20/2015 8:42:11 AM
+           Account Expires:		-
+           Primary Group ID:	-
+           AllowedToDelegateTo:	-
+           Old UAC Value:		-
+           New UAC Value:		-
+           User Account Control:	-
+           User Parameters:	-
+            SID History:		-
+           Logon Hours:		-
+        Additional Information
+           Privileges:		-</EventData></Event>
+2016-12-20 17:24:25.364825 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4624</EventID><Version>0</Version><Level>Information</Level><Task>Logon</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10218036</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2900'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was successfully logged on.
+        Subject:
+           Security ID: NULL SID
+           Account Name:		-
+           Account Domain:		-
+           Logon ID:		0x0
+
+        Logon Type:			3
+
+        New Logon:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name: steven.jacobs
+           Account Domain: SANDBOX
+           Logon ID:		0x582eb157
+           Logon GUID:		{a840c337-fb6a-8e32-7126-6c7e5951b8ed}
+
+        Process Information
+           Process ID:		0x0
+           Process Name:		-
+
+        Network Information
+           Workstation Name:
+           Source Network Address:	-
+           Source Port:		-
+
+        Detailed Authentication Information:
+           Logon Process: Kerberos
+           Authentication Package: Kerberos
+           Transited Services:	-
+           Package Name (NTLM only):	-
+           Key Length:		0
+
+        This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+        The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+        The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+        The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+        The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+        The authentication information fields provide detailed information about this specific logon request.
+           - Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+           - Transited services indicate which intermediate services have participated in this logon request.
+           - Package name indicates which sub-protocol was used among the NTLM protocols.
+           - Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</EventData></Event>
+2016-12-20 17:24:31.385885 REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-WW-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-NA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-EMEA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-APAC-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-ENT-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-SME-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+2016-12-20 17:24:39.430419 NETWORK MONITOR EVENT 10.1.3.82 <LOC0:INFO> Mar  5 13:04:54 US-FINSVR001 EVID:0042 US-FINSVR001 accessed url: http://www.dropbox.com at 108.160.166.62
+2016-12-20 17:24:44.459956 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4634</EventID><Version>0</Version><Level>Information</Level><Task>Logoff</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>33176</EventRecordID><Correlation/><Execution ProcessID='528' ThreadID='932'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was logged off.Subject:   Security ID:		SANDBOX\steven.jacobs   Account Name:       steven.jacobs   Account Domain:     SANDBOX   Logon ID:           0x1961D898Logon Type:			10This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</EventData></Event>
+2016-12-20 17:29:21.534475 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4720</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018611</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was created.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        New Account:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Attributes:
+           SAM Account Name:	steven.jacobs
+           Display Name:       Steven Jacobs
+           User Principal Name:	steven.jacobs@SANDBOX.com
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	<never>
+           Account Expires:		<never>
+           Primary Group ID:	513
+           Allowed To Delegate To:	-
+           Old UAC Value:		0x0
+           New UAC Value:		0x15
+           User Account Control:
+               Account Disabled
+               'Password Not Required' - Enabled
+               'Normal Account' - Enabled
+           User Parameters:	-
+           SID History:		-
+           Logon Hours:		<value not set>
+
+        Additional Information:
+           Privileges		-</EventData></Event>
+2016-12-20 17:29:27.576297 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4722</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018621</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1692'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was enabled.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:		SANDBOX</EventData></Event>
+2016-12-20 17:29:33.602159 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4738</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018616</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was changed.
+        Subject:
+           Security ID:		NT AUTHORITY\ANONYMOUS LOGON
+           Account Name:       ANONYMOUS LOGON
+           Account Domain:     NT AUTHORITY
+           Logon ID:           0x3e6
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Changed Attributes
+           SAM Account Name:	-
+           Display Name:		-
+           User Principal Name:	-
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	2/20/2015 8:42:11 AM
+           Account Expires:		-
+           Primary Group ID:	-
+           AllowedToDelegateTo:	-
+           Old UAC Value:		-
+           New UAC Value:		-
+           User Account Control:	-
+           User Parameters:	-
+            SID History:		-
+           Logon Hours:		-
+        Additional Information
+           Privileges:		-</EventData></Event>
+2016-12-20 17:29:42.616759 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4624</EventID><Version>0</Version><Level>Information</Level><Task>Logon</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10218036</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2900'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was successfully logged on.
+        Subject:
+           Security ID: NULL SID
+           Account Name:		-
+           Account Domain:		-
+           Logon ID:		0x0
+
+        Logon Type:			3
+
+        New Logon:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name: steven.jacobs
+           Account Domain: SANDBOX
+           Logon ID:		0x582eb157
+           Logon GUID:		{a840c337-fb6a-8e32-7126-6c7e5951b8ed}
+
+        Process Information
+           Process ID:		0x0
+           Process Name:		-
+
+        Network Information
+           Workstation Name:
+           Source Network Address:	-
+           Source Port:		-
+
+        Detailed Authentication Information:
+           Logon Process: Kerberos
+           Authentication Package: Kerberos
+           Transited Services:	-
+           Package Name (NTLM only):	-
+           Key Length:		0
+
+        This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+        The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+        The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+        The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+        The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+        The authentication information fields provide detailed information about this specific logon request.
+           - Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+           - Transited services indicate which intermediate services have participated in this logon request.
+           - Package name indicates which sub-protocol was used among the NTLM protocols.
+           - Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</EventData></Event>
+2016-12-20 17:29:47.642590 REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-WW-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-NA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-EMEA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-APAC-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-ENT-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-SME-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+2016-12-20 17:29:56.675541 NETWORK MONITOR EVENT 10.1.3.82 <LOC0:INFO> Mar  5 13:04:54 US-FINSVR001 EVID:0042 US-FINSVR001 accessed url: http://www.dropbox.com at 108.160.166.62
+2016-12-20 17:30:05.695474 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4634</EventID><Version>0</Version><Level>Information</Level><Task>Logoff</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>33176</EventRecordID><Correlation/><Execution ProcessID='528' ThreadID='932'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was logged off.Subject:   Security ID:		SANDBOX\steven.jacobs   Account Name:       steven.jacobs   Account Domain:     SANDBOX   Logon ID:           0x1961D898Logon Type:			10This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</EventData></Event>
+2016-12-20 17:30:12.741559 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4726</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10295733</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2328'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was deleted.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:           0x909f8207
+
+        Target Account
+           Security ID:        S -1 - 5 - 21 - 3198741196 - 3878509842 - 143179808 - 1120
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Additional Information
+           Privileges      -</EventData></Event>
+2016-12-20 17:34:15.110979 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4720</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018611</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was created.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        New Account:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Attributes:
+           SAM Account Name:	steven.jacobs
+           Display Name:       Steven Jacobs
+           User Principal Name:	steven.jacobs@SANDBOX.com
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	<never>
+           Account Expires:		<never>
+           Primary Group ID:	513
+           Allowed To Delegate To:	-
+           Old UAC Value:		0x0
+           New UAC Value:		0x15
+           User Account Control:
+               Account Disabled
+               'Password Not Required' - Enabled
+               'Normal Account' - Enabled
+           User Parameters:	-
+           SID History:		-
+           Logon Hours:		<value not set>
+
+        Additional Information:
+           Privileges		-</EventData></Event>
+2016-12-20 17:34:23.140772 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4722</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018621</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1692'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was enabled.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:		SANDBOX</EventData></Event>
+2016-12-20 17:34:29.172067 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4738</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018616</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was changed.
+        Subject:
+           Security ID:		NT AUTHORITY\ANONYMOUS LOGON
+           Account Name:       ANONYMOUS LOGON
+           Account Domain:     NT AUTHORITY
+           Logon ID:           0x3e6
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Changed Attributes
+           SAM Account Name:	-
+           Display Name:		-
+           User Principal Name:	-
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	2/20/2015 8:42:11 AM
+           Account Expires:		-
+           Primary Group ID:	-
+           AllowedToDelegateTo:	-
+           Old UAC Value:		-
+           New UAC Value:		-
+           User Account Control:	-
+           User Parameters:	-
+            SID History:		-
+           Logon Hours:		-
+        Additional Information
+           Privileges:		-</EventData></Event>
+2016-12-20 17:34:34.191505 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4624</EventID><Version>0</Version><Level>Information</Level><Task>Logon</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10218036</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2900'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was successfully logged on.
+        Subject:
+           Security ID: NULL SID
+           Account Name:		-
+           Account Domain:		-
+           Logon ID:		0x0
+
+        Logon Type:			3
+
+        New Logon:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name: steven.jacobs
+           Account Domain: SANDBOX
+           Logon ID:		0x582eb157
+           Logon GUID:		{a840c337-fb6a-8e32-7126-6c7e5951b8ed}
+
+        Process Information
+           Process ID:		0x0
+           Process Name:		-
+
+        Network Information
+           Workstation Name:
+           Source Network Address:	-
+           Source Port:		-
+
+        Detailed Authentication Information:
+           Logon Process: Kerberos
+           Authentication Package: Kerberos
+           Transited Services:	-
+           Package Name (NTLM only):	-
+           Key Length:		0
+
+        This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+        The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+        The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+        The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+        The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+        The authentication information fields provide detailed information about this specific logon request.
+           - Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+           - Transited services indicate which intermediate services have participated in this logon request.
+           - Package name indicates which sub-protocol was used among the NTLM protocols.
+           - Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</EventData></Event>
+2016-12-20 17:34:44.224510 REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-WW-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-NA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-EMEA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-APAC-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-ENT-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-SME-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+2016-12-20 17:34:51.257437 NETWORK MONITOR EVENT 10.1.3.82 <LOC0:INFO> Mar  5 13:04:54 US-FINSVR001 EVID:0042 US-FINSVR001 accessed url: http://www.dropbox.com at 108.160.166.62
+2016-12-20 17:34:59.288925 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4634</EventID><Version>0</Version><Level>Information</Level><Task>Logoff</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>33176</EventRecordID><Correlation/><Execution ProcessID='528' ThreadID='932'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was logged off.Subject:   Security ID:		SANDBOX\steven.jacobs   Account Name:       steven.jacobs   Account Domain:     SANDBOX   Logon ID:           0x1961D898Logon Type:			10This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</EventData></Event>
+2016-12-20 17:35:07.335416 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4726</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10295733</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2328'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was deleted.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:           0x909f8207
+
+        Target Account
+           Security ID:        S -1 - 5 - 21 - 3198741196 - 3878509842 - 143179808 - 1120
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Additional Information
+           Privileges      -</EventData></Event>
+2016-12-20 17:35:50.953443 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4720</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018611</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was created.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        New Account:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Attributes:
+           SAM Account Name:	steven.jacobs
+           Display Name:       Steven Jacobs
+           User Principal Name:	steven.jacobs@SANDBOX.com
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	<never>
+           Account Expires:		<never>
+           Primary Group ID:	513
+           Allowed To Delegate To:	-
+           Old UAC Value:		0x0
+           New UAC Value:		0x15
+           User Account Control:
+               Account Disabled
+               'Password Not Required' - Enabled
+               'Normal Account' - Enabled
+           User Parameters:	-
+           SID History:		-
+           Logon Hours:		<value not set>
+
+        Additional Information:
+           Privileges		-</EventData></Event>
+2016-12-20 17:35:58.984828 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4722</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018621</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1692'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was enabled.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:		SANDBOX</EventData></Event>
+2016-12-20 17:37:42.538451 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4720</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018611</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was created.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        New Account:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Attributes:
+           SAM Account Name:	steven.jacobs
+           Display Name:       Steven Jacobs
+           User Principal Name:	steven.jacobs@SANDBOX.com
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	<never>
+           Account Expires:		<never>
+           Primary Group ID:	513
+           Allowed To Delegate To:	-
+           Old UAC Value:		0x0
+           New UAC Value:		0x15
+           User Account Control:
+               Account Disabled
+               'Password Not Required' - Enabled
+               'Normal Account' - Enabled
+           User Parameters:	-
+           SID History:		-
+           Logon Hours:		<value not set>
+
+        Additional Information:
+           Privileges		-</EventData></Event>
+2016-12-20 17:37:51.562159 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4722</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018621</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1692'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was enabled.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:		SANDBOX</EventData></Event>
+2016-12-20 17:38:01.581174 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4738</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018616</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was changed.
+        Subject:
+           Security ID:		NT AUTHORITY\ANONYMOUS LOGON
+           Account Name:       ANONYMOUS LOGON
+           Account Domain:     NT AUTHORITY
+           Logon ID:           0x3e6
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Changed Attributes
+           SAM Account Name:	-
+           Display Name:		-
+           User Principal Name:	-
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	2/20/2015 8:42:11 AM
+           Account Expires:		-
+           Primary Group ID:	-
+           AllowedToDelegateTo:	-
+           Old UAC Value:		-
+           New UAC Value:		-
+           User Account Control:	-
+           User Parameters:	-
+            SID History:		-
+           Logon Hours:		-
+        Additional Information
+           Privileges:		-</EventData></Event>
+2016-12-20 17:38:07.612625 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4624</EventID><Version>0</Version><Level>Information</Level><Task>Logon</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10218036</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2900'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was successfully logged on.
+        Subject:
+           Security ID: NULL SID
+           Account Name:		-
+           Account Domain:		-
+           Logon ID:		0x0
+
+        Logon Type:			3
+
+        New Logon:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name: steven.jacobs
+           Account Domain: SANDBOX
+           Logon ID:		0x582eb157
+           Logon GUID:		{a840c337-fb6a-8e32-7126-6c7e5951b8ed}
+
+        Process Information
+           Process ID:		0x0
+           Process Name:		-
+
+        Network Information
+           Workstation Name:
+           Source Network Address:	-
+           Source Port:		-
+
+        Detailed Authentication Information:
+           Logon Process: Kerberos
+           Authentication Package: Kerberos
+           Transited Services:	-
+           Package Name (NTLM only):	-
+           Key Length:		0
+
+        This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+        The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+        The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+        The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+        The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+        The authentication information fields provide detailed information about this specific logon request.
+           - Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+           - Transited services indicate which intermediate services have participated in this logon request.
+           - Package name indicates which sub-protocol was used among the NTLM protocols.
+           - Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</EventData></Event>
+2016-12-20 17:38:13.639079 REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-WW-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-NA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-EMEA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-APAC-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-ENT-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-SME-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+2016-12-20 17:38:22.668629 NETWORK MONITOR EVENT 10.1.3.82 <LOC0:INFO> Mar  5 13:04:54 US-FINSVR001 EVID:0042 US-FINSVR001 accessed url: http://www.dropbox.com at 108.160.166.62
+2016-12-20 17:38:32.699743 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4634</EventID><Version>0</Version><Level>Information</Level><Task>Logoff</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>33176</EventRecordID><Correlation/><Execution ProcessID='528' ThreadID='932'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was logged off.Subject:   Security ID:		SANDBOX\steven.jacobs   Account Name:       steven.jacobs   Account Domain:     SANDBOX   Logon ID:           0x1961D898Logon Type:			10This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</EventData></Event>
+2016-12-20 17:38:42.733028 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4726</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10295733</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2328'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was deleted.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:           0x909f8207
+
+        Target Account
+           Security ID:        S -1 - 5 - 21 - 3198741196 - 3878509842 - 143179808 - 1120
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Additional Information
+           Privileges      -</EventData></Event>
+2016-12-20 18:07:59.346663 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4720</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018611</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was created.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        New Account:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Attributes:
+           SAM Account Name:	steven.jacobs
+           Display Name:       Steven Jacobs
+           User Principal Name:	steven.jacobs@SANDBOX.com
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	<never>
+           Account Expires:		<never>
+           Primary Group ID:	513
+           Allowed To Delegate To:	-
+           Old UAC Value:		0x0
+           New UAC Value:		0x15
+           User Account Control:
+               Account Disabled
+               'Password Not Required' - Enabled
+               'Normal Account' - Enabled
+           User Parameters:	-
+           SID History:		-
+           Logon Hours:		<value not set>
+
+        Additional Information:
+           Privileges		-</EventData></Event>
+2016-12-20 18:08:08.370734 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4722</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018621</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1692'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was enabled.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:		SANDBOX</EventData></Event>
+2016-12-20 18:08:16.406228 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4738</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018616</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was changed.
+        Subject:
+           Security ID:		NT AUTHORITY\ANONYMOUS LOGON
+           Account Name:       ANONYMOUS LOGON
+           Account Domain:     NT AUTHORITY
+           Logon ID:           0x3e6
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Changed Attributes
+           SAM Account Name:	-
+           Display Name:		-
+           User Principal Name:	-
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	2/20/2015 8:42:11 AM
+           Account Expires:		-
+           Primary Group ID:	-
+           AllowedToDelegateTo:	-
+           Old UAC Value:		-
+           New UAC Value:		-
+           User Account Control:	-
+           User Parameters:	-
+            SID History:		-
+           Logon Hours:		-
+        Additional Information
+           Privileges:		-</EventData></Event>
+2016-12-20 18:08:23.450998 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4624</EventID><Version>0</Version><Level>Information</Level><Task>Logon</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10218036</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2900'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was successfully logged on.
+        Subject:
+           Security ID: NULL SID
+           Account Name:		-
+           Account Domain:		-
+           Logon ID:		0x0
+
+        Logon Type:			3
+
+        New Logon:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name: steven.jacobs
+           Account Domain: SANDBOX
+           Logon ID:		0x582eb157
+           Logon GUID:		{a840c337-fb6a-8e32-7126-6c7e5951b8ed}
+
+        Process Information
+           Process ID:		0x0
+           Process Name:		-
+
+        Network Information
+           Workstation Name:
+           Source Network Address:	-
+           Source Port:		-
+
+        Detailed Authentication Information:
+           Logon Process: Kerberos
+           Authentication Package: Kerberos
+           Transited Services:	-
+           Package Name (NTLM only):	-
+           Key Length:		0
+
+        This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+        The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+        The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+        The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+        The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+        The authentication information fields provide detailed information about this specific logon request.
+           - Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+           - Transited services indicate which intermediate services have participated in this logon request.
+           - Package name indicates which sub-protocol was used among the NTLM protocols.
+           - Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</EventData></Event>
+2016-12-20 18:08:33.487291 REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-WW-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-NA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-EMEA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-APAC-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-ENT-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-SME-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+2016-12-20 18:08:41.511201 NETWORK MONITOR EVENT 10.1.3.82 <LOC0:INFO> Mar  5 13:04:54 US-FINSVR001 EVID:0042 US-FINSVR001 accessed url: http://www.dropbox.com at 108.160.166.62
+2016-12-20 18:08:48.543192 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4634</EventID><Version>0</Version><Level>Information</Level><Task>Logoff</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>33176</EventRecordID><Correlation/><Execution ProcessID='528' ThreadID='932'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was logged off.Subject:   Security ID:		SANDBOX\steven.jacobs   Account Name:       steven.jacobs   Account Domain:     SANDBOX   Logon ID:           0x1961D898Logon Type:			10This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</EventData></Event>
+2016-12-20 18:08:55.567321 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4726</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10295733</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2328'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was deleted.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:           0x909f8207
+
+        Target Account
+           Security ID:        S -1 - 5 - 21 - 3198741196 - 3878509842 - 143179808 - 1120
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Additional Information
+           Privileges      -</EventData></Event>
+2016-12-20 18:10:11.479639 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4720</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018611</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was created.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        New Account:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Attributes:
+           SAM Account Name:	steven.jacobs
+           Display Name:       Steven Jacobs
+           User Principal Name:	steven.jacobs@SANDBOX.com
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	<never>
+           Account Expires:		<never>
+           Primary Group ID:	513
+           Allowed To Delegate To:	-
+           Old UAC Value:		0x0
+           New UAC Value:		0x15
+           User Account Control:
+               Account Disabled
+               'Password Not Required' - Enabled
+               'Normal Account' - Enabled
+           User Parameters:	-
+           SID History:		-
+           Logon Hours:		<value not set>
+
+        Additional Information:
+           Privileges		-</EventData></Event>
+2016-12-20 18:10:12.540554 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4720</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018611</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was created.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        New Account:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Attributes:
+           SAM Account Name:	steven.jacobs
+           Display Name:       Steven Jacobs
+           User Principal Name:	steven.jacobs@SANDBOX.com
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	<never>
+           Account Expires:		<never>
+           Primary Group ID:	513
+           Allowed To Delegate To:	-
+           Old UAC Value:		0x0
+           New UAC Value:		0x15
+           User Account Control:
+               Account Disabled
+               'Password Not Required' - Enabled
+               'Normal Account' - Enabled
+           User Parameters:	-
+           SID History:		-
+           Logon Hours:		<value not set>
+
+        Additional Information:
+           Privileges		-</EventData></Event>
+2016-12-20 18:10:16.528414 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4722</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018621</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1692'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was enabled.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:		SANDBOX</EventData></Event>
+2016-12-20 18:10:21.570351 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4722</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018621</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1692'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was enabled.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:		    0x77cd92ba
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:		SANDBOX</EventData></Event>
+2016-12-20 18:10:26.573411 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4738</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018616</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was changed.
+        Subject:
+           Security ID:		NT AUTHORITY\ANONYMOUS LOGON
+           Account Name:       ANONYMOUS LOGON
+           Account Domain:     NT AUTHORITY
+           Logon ID:           0x3e6
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Changed Attributes
+           SAM Account Name:	-
+           Display Name:		-
+           User Principal Name:	-
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	2/20/2015 8:42:11 AM
+           Account Expires:		-
+           Primary Group ID:	-
+           AllowedToDelegateTo:	-
+           Old UAC Value:		-
+           New UAC Value:		-
+           User Account Control:	-
+           User Parameters:	-
+            SID History:		-
+           Logon Hours:		-
+        Additional Information
+           Privileges:		-</EventData></Event>
+2016-12-20 18:10:28.603197 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4738</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10018616</EventRecordID><Correlation/><Execution ProcessID='584' ThreadID='1260'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was changed.
+        Subject:
+           Security ID:		NT AUTHORITY\ANONYMOUS LOGON
+           Account Name:       ANONYMOUS LOGON
+           Account Domain:     NT AUTHORITY
+           Logon ID:           0x3e6
+
+        Target Account
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Changed Attributes
+           SAM Account Name:	-
+           Display Name:		-
+           User Principal Name:	-
+           Home Directory:		-
+           Home Drive:		-
+           Script Path:		-
+           Profile Path:		-
+           User Workstations:	-
+           Password Last Set:	2/20/2015 8:42:11 AM
+           Account Expires:		-
+           Primary Group ID:	-
+           AllowedToDelegateTo:	-
+           Old UAC Value:		-
+           New UAC Value:		-
+           User Account Control:	-
+           User Parameters:	-
+            SID History:		-
+           Logon Hours:		-
+        Additional Information
+           Privileges:		-</EventData></Event>
+2016-12-20 18:10:33.638466 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4624</EventID><Version>0</Version><Level>Information</Level><Task>Logon</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10218036</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2900'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was successfully logged on.
+        Subject:
+           Security ID: NULL SID
+           Account Name:		-
+           Account Domain:		-
+           Logon ID:		0x0
+
+        Logon Type:			3
+
+        New Logon:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name: steven.jacobs
+           Account Domain: SANDBOX
+           Logon ID:		0x582eb157
+           Logon GUID:		{a840c337-fb6a-8e32-7126-6c7e5951b8ed}
+
+        Process Information
+           Process ID:		0x0
+           Process Name:		-
+
+        Network Information
+           Workstation Name:
+           Source Network Address:	-
+           Source Port:		-
+
+        Detailed Authentication Information:
+           Logon Process: Kerberos
+           Authentication Package: Kerberos
+           Transited Services:	-
+           Package Name (NTLM only):	-
+           Key Length:		0
+
+        This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+        The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+        The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+        The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+        The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+        The authentication information fields provide detailed information about this specific logon request.
+           - Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+           - Transited services indicate which intermediate services have participated in this logon request.
+           - Package name indicates which sub-protocol was used among the NTLM protocols.
+           - Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</EventData></Event>
+2016-12-20 18:10:35.608457 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4624</EventID><Version>0</Version><Level>Information</Level><Task>Logon</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10218036</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2900'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was successfully logged on.
+        Subject:
+           Security ID: NULL SID
+           Account Name:		-
+           Account Domain:		-
+           Logon ID:		0x0
+
+        Logon Type:			3
+
+        New Logon:
+           Security ID:		SANDBOX\steven.jacobs
+           Account Name: steven.jacobs
+           Account Domain: SANDBOX
+           Logon ID:		0x582eb157
+           Logon GUID:		{a840c337-fb6a-8e32-7126-6c7e5951b8ed}
+
+        Process Information
+           Process ID:		0x0
+           Process Name:		-
+
+        Network Information
+           Workstation Name:
+           Source Network Address:	-
+           Source Port:		-
+
+        Detailed Authentication Information:
+           Logon Process: Kerberos
+           Authentication Package: Kerberos
+           Transited Services:	-
+           Package Name (NTLM only):	-
+           Key Length:		0
+
+        This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+        The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+        The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+        The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+        The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+        The authentication information fields provide detailed information about this specific logon request.
+           - Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+           - Transited services indicate which intermediate services have participated in this logon request.
+           - Package name indicates which sub-protocol was used among the NTLM protocols.
+           - Key length indicates the length of the generated session key. This will be 0 if no session key was requested.</EventData></Event>
+2016-12-20 18:10:43.660841 REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-WW-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-NA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-EMEA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-APAC-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-ENT-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-SME-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+2016-12-20 18:10:45.641749 REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-WW-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-NA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-EMEA-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-APAC-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-ENT-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+    REALTIME FILEMON EVENT=READ OBJECT=F:\Finance\Projected Earnings\Q4-2014-SME-Bookings.xlsx USER=SANDBOX\steven.jacobs PROCESS=EXCEL.EXE OFFSET=0 LENGTH=8192 SIZE=465248 DETAILS=lastaccess=9/25/2014 9:00:16 AM -0800 lastwrite=1/5/2015 9:36:44 PM -0800 create=9/25/2014 8:25:45 AM -0800 usersid=S-1-5-21-3198741196-3878509842-143179808-1118 pid=3376 Policy=FinanceDataFIM   ohost=US-FINSVR001  ihost=US-FINSVR001
+2016-12-20 18:10:50.704790 NETWORK MONITOR EVENT 10.1.3.82 <LOC0:INFO> Mar  5 13:04:54 US-FINSVR001 EVID:0042 US-FINSVR001 accessed url: http://www.dropbox.com at 108.160.166.62
+2016-12-20 18:10:51.673101 NETWORK MONITOR EVENT 10.1.3.82 <LOC0:INFO> Mar  5 13:04:54 US-FINSVR001 EVID:0042 US-FINSVR001 accessed url: http://www.dropbox.com at 108.160.166.62
+2016-12-20 18:10:57.700291 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4634</EventID><Version>0</Version><Level>Information</Level><Task>Logoff</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>33176</EventRecordID><Correlation/><Execution ProcessID='528' ThreadID='932'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was logged off.Subject:   Security ID:		SANDBOX\steven.jacobs   Account Name:       steven.jacobs   Account Domain:     SANDBOX   Logon ID:           0x1961D898Logon Type:			10This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</EventData></Event>
+2016-12-20 18:10:58.735691 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4634</EventID><Version>0</Version><Level>Information</Level><Task>Logoff</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>33176</EventRecordID><Correlation/><Execution ProcessID='528' ThreadID='932'/><Channel>Security</Channel><Computer>US-FINSVR001.SANDBOX.com</Computer><Security/></System><EventData>An account was logged off.Subject:   Security ID:		SANDBOX\steven.jacobs   Account Name:       steven.jacobs   Account Domain:     SANDBOX   Logon ID:           0x1961D898Logon Type:			10This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.</EventData></Event>
+2016-12-20 18:11:02.734013 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4726</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10295733</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2328'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was deleted.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:           0x909f8207
+
+        Target Account
+           Security ID:        S -1 - 5 - 21 - 3198741196 - 3878509842 - 143179808 - 1120
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Additional Information
+           Privileges      -</EventData></Event>
+2016-12-20 18:11:05.766759 <Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'><System><Provider Name='Microsoft-Windows-Security-Auditing' Guid='{54849625-5478-4994-a5ba-3e3b0328c30d}'/><EventID>4726</EventID><Version>0</Version><Level>Information</Level><Task>User Account Management</Task><Opcode>Info</Opcode><Keywords>Audit Success</Keywords><TimeCreated SystemTime='2015-12-03T03:35:45.1244386Z'/><EventRecordID>10295733</EventRecordID><Correlation/><Execution ProcessID='600' ThreadID='2328'/><Channel>Security</Channel><Computer>US-LTSW001.SANDBOX.com</Computer><Security/></System><EventData>A user account was deleted.
+        Subject:
+           Security ID:		SANDBOX\carl.wilson
+           Account Name:       carl.wilson
+           Account Domain:     SANDBOX
+           Logon ID:           0x909f8207
+
+        Target Account
+           Security ID:        S -1 - 5 - 21 - 3198741196 - 3878509842 - 143179808 - 1120
+           Account Name:       steven.jacobs
+           Account Domain:     SANDBOX
+
+        Additional Information
+           Privileges      -</EventData></Event>

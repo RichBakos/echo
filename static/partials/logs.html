@@ -1,0 +1,67 @@
+<div>
+    <div class="page-header">
+        <div class="btn-group pull-right">
+            <button type="button" class="btn btn-primary" ng-click="addLog()">Add a log</button>
+            <button type="button" class="btn btn-primary" ng-click="allDone()">Done</button>
+        </div>
+        <h3><b>Manage logs for {{ usecasename }}</b></h3>
+
+    </div>
+    <table st-table="displayedCollection" st-safe-src="rowCollection" class="table table-striped">
+        <thead>
+        <tr>
+            <th width="20%">Description</th>
+            <th>Replay Message</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th colspan="3"><input st-search="" class="form-control" placeholder="find a log ..." type="text"
+                                   focus-on="searchMode" autofocus/>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="row in displayedCollection">
+            <td><b>{{ row.description }}</b></td>
+            <td>{{ row.message }}</td>
+            <td align="right">
+                <div class="btn-group-sm btn-group-vertical">
+                    <button type="button" class="btn btn-primary" ng-click="editLog(row)">Edit</button>
+                    <button type="button" class="btn btn-danger" ng-click="deleteLog(row)">Delete</button>
+                </div>
+            </td>
+        </tr
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3" class="text-right">
+                <div st-pagination="" st-items-by-page="5" st-displayed-pages=""></div>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+    <!-- Log-->
+    <div ng-if="log">
+        <div class="page-header">
+            <h3><b>Log for {{ usecasename }}</b></h3>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Description:</label>
+            <input type="text" class="form-control" id="message" ng-model="log.description" focus-on="editMode"
+                   autofocus>
+        </div>
+        <div class="form-group">
+            <label for="description">Replay Message:</label>
+            <textarea class="form-control" rows="1" id="description" ng-model="log.message"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="description">Log:</label>
+            <textarea class="form-control" rows="5" id="description" ng-model="log.log"></textarea>
+        </div>
+
+        <div class="btn-group pull-right">
+            <button type="button" class="btn btn-sm btn-primary" ng-click="saveLog(log)">Save</button>
+            <button type="button" class="btn btn-sm  btn-primary" ng-click="cancelLog()">Cancel</button>
+        </div>
+    </div><!-- /Log -->
+

@@ -1,0 +1,36 @@
+<div>
+    <div class=" page-header">
+        <h3><b>Select a use case to execute</b></h3>
+    </div>
+    <table st-table="displayedCollection" st-safe-src="rowCollection" class="table table-striped">
+        <thead>
+        <tr>
+            <th colspan="5"><input st-search="" class="form-control" placeholder="find a use case ..." type="search"
+                                   focus-on="searchMode" autofocus/>
+            </th>
+        </tr>
+        <tr>
+            <th width="20%">Title</th>
+            <th width="100%">Description</th>
+            <th></th>
+        </tr>
+
+        </thead>
+        <tbody>
+        <tr ng-repeat="row in displayedCollection">
+            <td>{{ row.title }}</td>
+            <td>{{ row.description }}</td>
+            <td>
+                <button type="button" class="btn btn-sm btn-success" ng-click="executeUseCase(row)">Execute</button>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3" class="text-right">
+                <div st-pagination="" st-items-by-page="5" st-displayed-pages=""></div>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+</div>

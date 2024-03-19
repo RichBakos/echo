@@ -1,0 +1,78 @@
+<div>
+    <div class="page-header">
+        <button type="button" class="btn btn-sm btn-primary pull-right" ng-click="addUseCase()">Add a use case</button>
+        <h3><b>Manage use cases</b></h3>
+    </div>
+    <table st-table="displayedCollection" st-safe-src="rowCollection" class="table table-striped">
+        <thead>
+        <tr>
+            <th width="20%">Title</th>
+            <th>Description</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th colspan="5"><input st-search="" class="form-control" placeholder="find a use case ..." type="text"
+                                   focus-on="searchMode" autofocus/>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="row in displayedCollection">
+            <td><b>{{ row.title }}</b></td>
+            <td>{{ row.description }}</td>
+            <td align="right">
+                <div class="btn-group btn-group-sm btn-group-vertical">
+                    <button type="button" class="btn btn-primary" ng-click="editUseCase(row)">Edit</button>
+                    <button type="button" class="btn btn-primary" ng-click="editLogs(row)">Logs</button>
+                    <button type="button" class="btn btn-primary" ng-click="editPcaps(row)">Pcaps</button>
+                    <button type="button" class="btn btn-danger" ng-click="deleteUseCase(row)">Delete</button>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3" class="text-right">
+                <div st-pagination="" st-items-by-page="5" st-displayed-pages=""></div>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+    <!-- Use Case -->
+    <div ng-if="usecase">
+
+
+        <div class="page-header">
+            <h3><b>Add/Edit use case</b></h3>
+        </div>
+
+        <div class="form-group">
+            <label for="title">Use Case Title:</label>
+            <input type="text" class="form-control" id="title" ng-model="usecase.title" focus-on="editMode" autofocus>
+        </div>
+        <div class="form-group">
+            <label for="description">Use Case Description:</label>
+            <textarea class="form-control" rows="3" id="description" ng-model="usecase.description"></textarea>
+        </div>
+        <div class="form-group">
+            <label><input type="checkbox" id="needspcaps" ng-model="usecase.needspcaps" value=""> This use case requires
+                pcaps to be replayed</label>
+        </div>
+        <div class="form-group">
+            <label><input type="checkbox" id="needslogs" ng-model="usecase.needslogs" value="true"> This use case
+                requires
+                logs to be replayed</label>
+        </div>
+        <div class="form-group">
+            <label for="logfile">Use Case Log File:</label>
+            <input type="text" class="form-control" id="logfile" ng-model="usecase.logfile">
+        </div>
+
+
+        <div class="btn-group pull-right">
+            <button type="button" class="btn btn-sm btn-primary" ng-click="saveUseCase(usecase)">Save</button>
+            <button type="button" class="btn btn-sm btn-primary" ng-click="cancelUseCase()">Cancel</button>
+        </div>
+
+    </div>
+</div><!-- /Use Case -->
+

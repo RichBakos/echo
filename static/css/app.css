@@ -1,0 +1,25 @@
+html {
+      position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+}
+
+.login {
+    padding-top: 5%;
+    position: relative;
+}
+
+

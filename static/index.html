@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="echo" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Project Echo - log replay">
+    <meta name="author" content="Rich Bakos">
+    <!--   <base href="/"> -->
+    <link rel="icon" href="img/favicon.png">
+    <title>LogRhythm - Project Echo</title>
+    <!-- Bootstrap  CSS -->
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div style="margin-top: 10px" class="page-header">
+        <a href="#/"> <img src="img/LogRhythm_Logo.png" alt="LogRhythm"/> </a>
+        <div class="btn-group btn-group-sm pull-right">
+            <a href="#/" class="btn btn-primary" role="button">Home</a>
+            <a href="#/usecase" class="btn btn-primary" role="button">Manage use cases</a>
+        </div>
+    </div>
+    <!-- partials -->
+    <div ng-view></div><!-- /partials -->
+</div> <!-- /container -->
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <p><a href="https://www.logrhythm.com">LogRhythm</a> | <a href="https://support.logrhythm.com">Support</a>
+            | &copy; LogRhythm 2016</p>
+    </div>
+</footer><!-- /footer -->
+<!-- All scripts go here -->
+<script src="lib/jquery/dist/jquery.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-route.js"></script>
+<script src="lib/angular/angular-cookies.js"></script>
+<script src="lib/ngStorage.min.js"></script>
+<script src="lib/angular-smart-table/dist/smart-table.js"></script>
+<script src="lib/eventsource/EventSource.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

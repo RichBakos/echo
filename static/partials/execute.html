@@ -1,0 +1,15 @@
+<br/><br/>
+<div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8">
+
+        <div class="jumbotron">
+            <p ng-repeat=" msg in messages | unique track by $index">
+                {{ msg }}
+            </p>
+        </div>
+        <div class="col-sm-2">
+        </div>
+    </div>
+</div>
